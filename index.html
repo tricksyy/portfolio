@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <style>
+        body{
+            background-image: url("assits/img/background.jpg");
+        }
+        .container {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .box {
+            height: 86vh;
+            width: 75%;
+            padding: 0 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            z-index: 10;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 20px;
+            display: flex;
+            backdrop-filter: blur(25px);
+            box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+        }
+        .container nav {
+            height: 7%;
+            width: 90%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px auto;
+            padding: 20px;
+        }
+        .container .logo {
+            font-size: 32px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #000;
+            margin-left: 30px;
+        }
+        .container .logo::first-line {
+            color: #0ce4f3;
+            font-size: 35px;
+            font-family: bodoni mt black;
+        }
+        .container nav ul li {
+            display: inline-block;
+            padding: 0 20px;
+            top: 10px;
+        }
+        .container nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #f0ed50;
+            transition: 0.3s;
+        }
+        .container nav ul li a:hover {
+            color: #6f34fe;
+        }
+        .content {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            width: 100%;
+            margin-top: 8%;
+            padding-left: 80px;
+        }
+        .content .section-1 {
+            position: relative;
+            width: 40%;
+        }
+        .content .section-1 h1 {
+            margin-bottom: 20px;
+            font-size: 60px;
+            font-weight: 700;
+            color: #e9fc3f;
+        }
+        .content .section-1 h3 {
+            font-size: 30px;
+            color: #daf540;
+            margin-bottom: 10px;
+        }
+        .content .section-1 p {
+            font-size: 20px;
+            color: #fcff31;
+            margin-bottom: 60px;
+        }
+        .content .btn {
+            padding: 15px 20px;
+            border-radius: 5px;
+            background-color: #6f34fe;
+            border: 3px solid #6f34fe;
+            font-weight: 500;
+            text-decoration: none;
+            transition: 0.3s;
+            color: #fff;
+        }
+        .content .btn:hover {
+            background-color: #fff;
+            color: #69c8eece;
+        }
+        .pict{
+            float: left;
+            border-image: auto;
+            width: 500px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <nav>
+                <a href="#" class="logo"><span>Portfolio</span></a>
+                <ul>
+                    <li><a href="/HOME/default.asp" target="_blank">HOME</a></li>
+                    <li><a href="/ABOUT/default.asp" target="_blank">ABOUT</a></li>
+                    <li><a href="/SKILLS/default.asp" target="_blank">SKILLS</a></li>
+                    <li><a href="/CONTACT US" target="_blank">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <div class="content">
+                <div class="section-1">
+                    <h1>Hi, I'am Patrick</h1>
+                    <h3>A CITE STUDENT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                       nisi ut aliquip ex ea commodo consequat.</p>
+                    <a href="/message/default.asp" target="_blank" class="btn">message</a>
+                    </div>
+                    <div class="pict">
+                        <img src="pic.png" style="width: 350px; height: 450px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
